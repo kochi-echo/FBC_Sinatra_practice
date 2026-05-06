@@ -57,6 +57,7 @@ psql (PostgreSQL) 14.12 (Homebrew)
 ```
 $ brew services start postgresql
 ```
+※ ``Error: Formula `postgresql@XX` is not installed.``のエラーが表示された場合は、上述の「postgresqlの準備（Mac&Homebrewの場合）」項を実行してください。
 
 - DBにmemosテーブルが無い場合（初回サイト閲覧時など）は以下のコマンドを実行してください。
 
