@@ -57,7 +57,7 @@ end
 
 get '/memos' do
   @memos = Memo.all
-  erb :top
+  erb :index
 end
 
 get '/memos/new' do

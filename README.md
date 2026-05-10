@@ -73,7 +73,7 @@ $ bundle exec ruby src/app.rb
 
 以下のリンクからサイトの閲覧ができます。
 
-[メモアプリTop画面](http://localhost:4567/memos)
+[メモアプリトップページ](http://localhost:4567/memos)
 
 - サーバ終了には`Ctrl + C`をしてください。
 
@@ -87,7 +87,7 @@ $ brew services stop postgresql
 
 ## 操作方法
 
-### [メモアプリTop画面](http://localhost:4567/memos)
+### [メモアプリトップページ](http://localhost:4567/memos)
 
 - メモのタイトル：ハイパーリンクがついているメモのタイトルを押すとメモ詳細に移動
 - 追加ボタン：新規メモ作成画面に移動
@@ -119,7 +119,7 @@ $ brew services stop postgresql
 
 |Method|Path|Description|Process|
 |------|--------------------|---|---|
-|GET   |/memos              |メモ一覧を表示   |DB:memosからメモ名を取得して、top.erbを表示|
+|GET   |/memos              |メモ一覧を表示   |DB:memosからメモ名を取得して、トップページのindex.erbを表示|
 |GET   |/memos/:memo_id     |指定したメモを表示|DB:memosからメモ名と内容を取得して、show.erbを表示|
 |GET   |/memos/new          |メモ作成画面を表示|new.erbを表示|
 |POST  |/memos              |メモを作成|new.erbのフォームに入力された内容をDB:memosに反映し、/memosにリダイレクト|
