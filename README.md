@@ -113,7 +113,21 @@ $ brew services stop postgresql
 
 ## ディレクトリ構成
 
-<img width="388" alt="スクリーンショット 2024-06-09 9 53 10" src="https://github.com/kochi-echo/FBC_Sinatra_practice/assets/47914971/5847d137-0816-43cc-8a89-749cecac2575">
+```bash
+.
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+└── src
+    ├── app.rb
+    ├── pg_init.rb
+    └── views
+        ├── edit.erb
+        ├── index.erb
+        ├── layout.erb
+        ├── new.erb
+        └── show.erb
+```
 
 ## Method表
 
