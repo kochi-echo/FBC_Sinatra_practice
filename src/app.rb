@@ -14,7 +14,7 @@ class Memo
   end
 
   def self.all
-    conn.exec('SELECT * FROM memos')
+    conn.exec('SELECT * FROM memos').map { |row| Memo.new(row) }
   end
 
   def self.find(id)
